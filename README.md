@@ -1,53 +1,42 @@
-## ☁️ AWS Cloud Infrastructure
+## Cloud Infrastructure
 
-SMRITI is deployed on Amazon Web Services (AWS) to provide a secure, scalable, and reliable cloud environment for memory care services and caregiver analytics.
+SMRITI is deployed using Amazon Web Services (AWS) to ensure reliability, scalability, and secure access to user data.
 
-### AWS Services Used
+### AWS Services Utilized
 
-#### Amazon EC2
-- Hosts the FastAPI backend application.
-- Handles API requests, authentication, memory management, and recommendation logic.
+- **Amazon EC2** for hosting the backend services and APIs.
+- **Amazon EBS** for persistent application and database storage.
+- **Amazon S3** for storing memory-related media, including photos and audio files.
+- **AWS IAM** for secure resource access and permission management.
+- **Amazon VPC** for creating an isolated and protected network environment.
 
-#### Amazon EBS
-- Provides persistent storage for application data and databases.
-- Ensures data persistence even after instance restarts.
+### AWS Benefits
 
-#### Amazon S3
-- Stores memory-related photos, audio files, and backups.
-- Provides scalable and durable object storage.
+- Scalable cloud deployment
+- Secure storage and access management
+- Reliable data persistence
+- Media storage and backup capabilities
+- Network-level security and resource isolation
 
-#### AWS IAM
-- Manages secure access to AWS resources.
-- Implements role-based access control.
+## Core Features
 
-#### Amazon VPC
-- Creates a private and secure network environment.
-- Protects communication between AWS resources.
+### Elder Experience
+- Cognitive training activities
+- Personalized memory reminders
+- Mood tracking
+- Voice-guided assistance
+- Memory Vault management
+- Adaptive activity recommendations
 
-## Architecture
+### Caregiver Experience
+- Activity monitoring dashboard
+- Weekly summaries and insights
+- Memory engagement analytics
+- Trend-based observations
+- Progress tracking
 
-User
-│
-▼
-Frontend (HTML, CSS, JavaScript)
-│
-▼
-AWS EC2 Instance (FastAPI Backend)
-│
-├── Amazon EBS
-│   └── Database & Application Storage
-│
-└── Amazon S3
-    └── Photos, Audio & Media Storage
-
-Security Layer:
-AWS IAM + Amazon VPC + Security Groups
-
-## Cloud Features
-
-- Secure cloud deployment on AWS
-- Scalable backend hosting with EC2
-- Persistent storage using EBS
-- Media storage through Amazon S3
-- Identity and access management through IAM
-- Isolated networking using Amazon VPC
+### Accessibility
+- Hindi and English language support
+- Speech recognition commands
+- Text-to-speech guidance
+- User-friendly interface designed for elderly users
